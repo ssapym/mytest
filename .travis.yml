@@ -10,8 +10,6 @@ env:
   - DB=mysql
 
 before_script:
-  - sudo apt-get update -qq
-  - sudo apt-get upgrade -y -qq
   - composer self-update
   - composer install
   - if [[ "$DB" == "mysql" ]]; then mysql -uroot < yfrdb.sql; fi
