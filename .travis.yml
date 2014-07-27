@@ -1,7 +1,6 @@
 language: php
 
 php:
-  - 5.3
   - 5.4
   - 5.5
   - 5.6
@@ -12,5 +11,5 @@ env:
 before_script:
   - composer self-update
   - composer install
-  - if [[ "$DB" == "mysql" ]]; then mysql -uroot < yfrdb.sql; fi
+  - if [[ "$DB" == "mysql" ]]; then mysql -uroot < ./app/tests/yfrdb.sql; fi
 script: phpunit
