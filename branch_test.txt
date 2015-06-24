@@ -7,3 +7,4 @@ dev test 1
 dev test 2
 rel test 1
 rel test 2
+rel test 3
