@@ -12,5 +12,5 @@ rel test 2
 rel test 3
 rel fin
 
-bb
+bbb
 configuration management database
